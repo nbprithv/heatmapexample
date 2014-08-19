@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		966A45CE19A4180D00390939 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966A45CD19A4180D00390939 /* Foundation.framework */; };
+		966A45D019A4180D00390939 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966A45CF19A4180D00390939 /* CoreGraphics.framework */; };
+		966A45D219A4180D00390939 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966A45D119A4180D00390939 /* UIKit.framework */; };
+		966A45D819A4180D00390939 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 966A45D619A4180D00390939 /* InfoPlist.strings */; };
+		966A45DA19A4180D00390939 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A45D919A4180D00390939 /* main.m */; };
+		966A45DE19A4180D00390939 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A45DD19A4180D00390939 /* AppDelegate.m */; };
+		966A45E119A4180D00390939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966A45DF19A4180D00390939 /* Main.storyboard */; };
+		966A45E419A4180D00390939 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A45E319A4180D00390939 /* ViewController.m */; };
+		966A45E619A4180D00390939 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966A45E519A4180D00390939 /* Images.xcassets */; };
+		966A45ED19A4180D00390939 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966A45EC19A4180D00390939 /* XCTest.framework */; };
+		966A45EE19A4180D00390939 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966A45CD19A4180D00390939 /* Foundation.framework */; };
+		966A45EF19A4180D00390939 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966A45D119A4180D00390939 /* UIKit.framework */; };
+		966A45F719A4180D00390939 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 966A45F519A4180D00390939 /* InfoPlist.strings */; };
+		966A45F919A4180D00390939 /* HeatMapExample2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A45F819A4180D00390939 /* HeatMapExample2Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		966A45F019A4180D00390939 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 966A45C219A4180D00390939 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 966A45C919A4180D00390939;
+			remoteInfo = HeatMapExample2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		966A45CA19A4180D00390939 /* HeatMapExample2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeatMapExample2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		966A45CD19A4180D00390939 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		966A45CF19A4180D00390939 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		966A45D119A4180D00390939 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		966A45D519A4180D00390939 /* HeatMapExample2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeatMapExample2-Info.plist"; sourceTree = "<group>"; };
+		966A45D719A4180D00390939 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		966A45D919A4180D00390939 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		966A45DB19A4180D00390939 /* HeatMapExample2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HeatMapExample2-Prefix.pch"; sourceTree = "<group>"; };
+		966A45DC19A4180D00390939 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		966A45DD19A4180D00390939 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		966A45E019A4180D00390939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		966A45E219A4180D00390939 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		966A45E319A4180D00390939 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		966A45E519A4180D00390939 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		966A45EB19A4180D00390939 /* HeatMapExample2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeatMapExample2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		966A45EC19A4180D00390939 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		966A45F419A4180D00390939 /* HeatMapExample2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeatMapExample2Tests-Info.plist"; sourceTree = "<group>"; };
+		966A45F619A4180D00390939 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		966A45F819A4180D00390939 /* HeatMapExample2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeatMapExample2Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		966A45C719A4180D00390939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966A45D019A4180D00390939 /* CoreGraphics.framework in Frameworks */,
+				966A45D219A4180D00390939 /* UIKit.framework in Frameworks */,
+				966A45CE19A4180D00390939 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		966A45E819A4180D00390939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966A45ED19A4180D00390939 /* XCTest.framework in Frameworks */,
+				966A45EF19A4180D00390939 /* UIKit.framework in Frameworks */,
+				966A45EE19A4180D00390939 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		966A45C119A4180D00390939 = {
+			isa = PBXGroup;
+			children = (
+				966A45D319A4180D00390939 /* HeatMapExample2 */,
+				966A45F219A4180D00390939 /* HeatMapExample2Tests */,
+				966A45CC19A4180D00390939 /* Frameworks */,
+				966A45CB19A4180D00390939 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		966A45CB19A4180D00390939 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				966A45CA19A4180D00390939 /* HeatMapExample2.app */,
+				966A45EB19A4180D00390939 /* HeatMapExample2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		966A45CC19A4180D00390939 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				966A45CD19A4180D00390939 /* Foundation.framework */,
+				966A45CF19A4180D00390939 /* CoreGraphics.framework */,
+				966A45D119A4180D00390939 /* UIKit.framework */,
+				966A45EC19A4180D00390939 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		966A45D319A4180D00390939 /* HeatMapExample2 */ = {
+			isa = PBXGroup;
+			children = (
+				966A45DC19A4180D00390939 /* AppDelegate.h */,
+				966A45DD19A4180D00390939 /* AppDelegate.m */,
+				966A45DF19A4180D00390939 /* Main.storyboard */,
+				966A45E219A4180D00390939 /* ViewController.h */,
+				966A45E319A4180D00390939 /* ViewController.m */,
+				966A45E519A4180D00390939 /* Images.xcassets */,
+				966A45D419A4180D00390939 /* Supporting Files */,
+			);
+			path = HeatMapExample2;
+			sourceTree = "<group>";
+		};
+		966A45D419A4180D00390939 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				966A45D519A4180D00390939 /* HeatMapExample2-Info.plist */,
+				966A45D619A4180D00390939 /* InfoPlist.strings */,
+				966A45D919A4180D00390939 /* main.m */,
+				966A45DB19A4180D00390939 /* HeatMapExample2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		966A45F219A4180D00390939 /* HeatMapExample2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				966A45F819A4180D00390939 /* HeatMapExample2Tests.m */,
+				966A45F319A4180D00390939 /* Supporting Files */,
+			);
+			path = HeatMapExample2Tests;
+			sourceTree = "<group>";
+		};
+		966A45F319A4180D00390939 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				966A45F419A4180D00390939 /* HeatMapExample2Tests-Info.plist */,
+				966A45F519A4180D00390939 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		966A45C919A4180D00390939 /* HeatMapExample2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 966A45FC19A4180D00390939 /* Build configuration list for PBXNativeTarget "HeatMapExample2" */;
+			buildPhases = (
+				966A45C619A4180D00390939 /* Sources */,
+				966A45C719A4180D00390939 /* Frameworks */,
+				966A45C819A4180D00390939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeatMapExample2;
+			productName = HeatMapExample2;
+			productReference = 966A45CA19A4180D00390939 /* HeatMapExample2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		966A45EA19A4180D00390939 /* HeatMapExample2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 966A45FF19A4180D00390939 /* Build configuration list for PBXNativeTarget "HeatMapExample2Tests" */;
+			buildPhases = (
+				966A45E719A4180D00390939 /* Sources */,
+				966A45E819A4180D00390939 /* Frameworks */,
+				966A45E919A4180D00390939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				966A45F119A4180D00390939 /* PBXTargetDependency */,
+			);
+			name = HeatMapExample2Tests;
+			productName = HeatMapExample2Tests;
+			productReference = 966A45EB19A4180D00390939 /* HeatMapExample2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		966A45C219A4180D00390939 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Niranjan Prithviraj";
+				TargetAttributes = {
+					966A45EA19A4180D00390939 = {
+						TestTargetID = 966A45C919A4180D00390939;
+					};
+				};
+			};
+			buildConfigurationList = 966A45C519A4180D00390939 /* Build configuration list for PBXProject "HeatMapExample2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 966A45C119A4180D00390939;
+			productRefGroup = 966A45CB19A4180D00390939 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				966A45C919A4180D00390939 /* HeatMapExample2 */,
+				966A45EA19A4180D00390939 /* HeatMapExample2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		966A45C819A4180D00390939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966A45E619A4180D00390939 /* Images.xcassets in Resources */,
+				966A45D819A4180D00390939 /* InfoPlist.strings in Resources */,
+				966A45E119A4180D00390939 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		966A45E919A4180D00390939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966A45F719A4180D00390939 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		966A45C619A4180D00390939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966A45E419A4180D00390939 /* ViewController.m in Sources */,
+				966A45DE19A4180D00390939 /* AppDelegate.m in Sources */,
+				966A45DA19A4180D00390939 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		966A45E719A4180D00390939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966A45F919A4180D00390939 /* HeatMapExample2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		966A45F119A4180D00390939 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 966A45C919A4180D00390939 /* HeatMapExample2 */;
+			targetProxy = 966A45F019A4180D00390939 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		966A45D619A4180D00390939 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				966A45D719A4180D00390939 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		966A45DF19A4180D00390939 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				966A45E019A4180D00390939 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		966A45F519A4180D00390939 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				966A45F619A4180D00390939 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		966A45FA19A4180D00390939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		966A45FB19A4180D00390939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		966A45FD19A4180D00390939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeatMapExample2/HeatMapExample2-Prefix.pch";
+				INFOPLIST_FILE = "HeatMapExample2/HeatMapExample2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		966A45FE19A4180D00390939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeatMapExample2/HeatMapExample2-Prefix.pch";
+				INFOPLIST_FILE = "HeatMapExample2/HeatMapExample2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		966A460019A4180D00390939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HeatMapExample2.app/HeatMapExample2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeatMapExample2/HeatMapExample2-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HeatMapExample2Tests/HeatMapExample2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		966A460119A4180D00390939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HeatMapExample2.app/HeatMapExample2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeatMapExample2/HeatMapExample2-Prefix.pch";
+				INFOPLIST_FILE = "HeatMapExample2Tests/HeatMapExample2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		966A45C519A4180D00390939 /* Build configuration list for PBXProject "HeatMapExample2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				966A45FA19A4180D00390939 /* Debug */,
+				966A45FB19A4180D00390939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		966A45FC19A4180D00390939 /* Build configuration list for PBXNativeTarget "HeatMapExample2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				966A45FD19A4180D00390939 /* Debug */,
+				966A45FE19A4180D00390939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		966A45FF19A4180D00390939 /* Build configuration list for PBXNativeTarget "HeatMapExample2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				966A460019A4180D00390939 /* Debug */,
+				966A460119A4180D00390939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 966A45C219A4180D00390939 /* Project object */;
+}
