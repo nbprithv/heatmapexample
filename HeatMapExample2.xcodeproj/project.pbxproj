@@ -21,6 +21,13 @@
 		966A45EF19A4180D00390939 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966A45D119A4180D00390939 /* UIKit.framework */; };
 		966A45F719A4180D00390939 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 966A45F519A4180D00390939 /* InfoPlist.strings */; };
 		966A45F919A4180D00390939 /* HeatMapExample2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A45F819A4180D00390939 /* HeatMapExample2Tests.m */; };
+		966A460719A4189700390939 /* HeatMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A460419A4189700390939 /* HeatMap.m */; };
+		966A460819A4189700390939 /* HeatMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A460619A4189700390939 /* HeatMapView.m */; };
+		966A460D19A4199F00390939 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 966A460A19A4199F00390939 /* LICENSE */; };
+		966A460E19A4199F00390939 /* parseCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A460C19A4199F00390939 /* parseCSV.m */; };
+		966A461019A419E600390939 /* Breweries_clean.csv in Resources */ = {isa = PBXBuildFile; fileRef = 966A460F19A419E600390939 /* Breweries_clean.csv */; };
+		966A462B19A4255B00390939 /* LocationList.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A462A19A4255B00390939 /* LocationList.m */; };
+		966A462E19A42F7900390939 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A462D19A42F7900390939 /* Location.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,18 @@
 		966A45F419A4180D00390939 /* HeatMapExample2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeatMapExample2Tests-Info.plist"; sourceTree = "<group>"; };
 		966A45F619A4180D00390939 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		966A45F819A4180D00390939 /* HeatMapExample2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeatMapExample2Tests.m; sourceTree = "<group>"; };
+		966A460319A4189700390939 /* HeatMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeatMap.h; sourceTree = "<group>"; };
+		966A460419A4189700390939 /* HeatMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatMap.m; sourceTree = "<group>"; };
+		966A460519A4189700390939 /* HeatMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeatMapView.h; sourceTree = "<group>"; };
+		966A460619A4189700390939 /* HeatMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatMapView.m; sourceTree = "<group>"; };
+		966A460A19A4199F00390939 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		966A460B19A4199F00390939 /* parseCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parseCSV.h; sourceTree = "<group>"; };
+		966A460C19A4199F00390939 /* parseCSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = parseCSV.m; sourceTree = "<group>"; };
+		966A460F19A419E600390939 /* Breweries_clean.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Breweries_clean.csv; sourceTree = "<group>"; };
+		966A462919A4255B00390939 /* LocationList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationList.h; sourceTree = "<group>"; };
+		966A462A19A4255B00390939 /* LocationList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationList.m; sourceTree = "<group>"; };
+		966A462C19A42F7900390939 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		966A462D19A42F7900390939 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +101,9 @@
 		966A45C119A4180D00390939 = {
 			isa = PBXGroup;
 			children = (
+				966A460F19A419E600390939 /* Breweries_clean.csv */,
+				966A460919A4199F00390939 /* cCSVParse */,
+				966A460219A4189700390939 /* HeatMap */,
 				966A45D319A4180D00390939 /* HeatMapExample2 */,
 				966A45F219A4180D00390939 /* HeatMapExample2Tests */,
 				966A45CC19A4180D00390939 /* Frameworks */,
@@ -112,11 +134,15 @@
 		966A45D319A4180D00390939 /* HeatMapExample2 */ = {
 			isa = PBXGroup;
 			children = (
+				966A462C19A42F7900390939 /* Location.h */,
+				966A462D19A42F7900390939 /* Location.m */,
 				966A45DC19A4180D00390939 /* AppDelegate.h */,
 				966A45DD19A4180D00390939 /* AppDelegate.m */,
 				966A45DF19A4180D00390939 /* Main.storyboard */,
 				966A45E219A4180D00390939 /* ViewController.h */,
 				966A45E319A4180D00390939 /* ViewController.m */,
+				966A462919A4255B00390939 /* LocationList.h */,
+				966A462A19A4255B00390939 /* LocationList.m */,
 				966A45E519A4180D00390939 /* Images.xcassets */,
 				966A45D419A4180D00390939 /* Supporting Files */,
 			);
@@ -150,6 +176,27 @@
 				966A45F519A4180D00390939 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		966A460219A4189700390939 /* HeatMap */ = {
+			isa = PBXGroup;
+			children = (
+				966A460319A4189700390939 /* HeatMap.h */,
+				966A460419A4189700390939 /* HeatMap.m */,
+				966A460519A4189700390939 /* HeatMapView.h */,
+				966A460619A4189700390939 /* HeatMapView.m */,
+			);
+			path = HeatMap;
+			sourceTree = "<group>";
+		};
+		966A460919A4199F00390939 /* cCSVParse */ = {
+			isa = PBXGroup;
+			children = (
+				966A460A19A4199F00390939 /* LICENSE */,
+				966A460B19A4199F00390939 /* parseCSV.h */,
+				966A460C19A4199F00390939 /* parseCSV.m */,
+			);
+			path = cCSVParse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +277,8 @@
 			files = (
 				966A45E619A4180D00390939 /* Images.xcassets in Resources */,
 				966A45D819A4180D00390939 /* InfoPlist.strings in Resources */,
+				966A460D19A4199F00390939 /* LICENSE in Resources */,
+				966A461019A419E600390939 /* Breweries_clean.csv in Resources */,
 				966A45E119A4180D00390939 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,9 +298,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				966A460719A4189700390939 /* HeatMap.m in Sources */,
+				966A462B19A4255B00390939 /* LocationList.m in Sources */,
 				966A45E419A4180D00390939 /* ViewController.m in Sources */,
+				966A460E19A4199F00390939 /* parseCSV.m in Sources */,
 				966A45DE19A4180D00390939 /* AppDelegate.m in Sources */,
 				966A45DA19A4180D00390939 /* main.m in Sources */,
+				966A462E19A42F7900390939 /* Location.m in Sources */,
+				966A460819A4189700390939 /* HeatMapView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

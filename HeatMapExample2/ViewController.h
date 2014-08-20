@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "HeatMap.h"
+#import "HeatMapView.h"
+#import "Location.h"
 
 @interface ViewController : UIViewController
+
+@property Location *currentLocation;
 
 @end
