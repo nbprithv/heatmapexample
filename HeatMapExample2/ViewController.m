@@ -37,6 +37,32 @@
     
     self.locationName.text = self.currentLocation.name;
     self.locationAddr.text = self.currentLocation.address;
+    
+    
+    NSString *location = self.currentLocation.address;
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    [geocoder geocodeAddressString:location
+                 completionHandler:^(NSArray* placemarks, NSError* error){
+                     if (placemarks && placemarks.count > 0) {
+                         CLPlacemark *topResult = [placemarks objectAtIndex:0];
+                         MKPlacemark *placemark = [[MKPlacemark alloc] initWithPlacemark:topResult];
+                         
+                         CLLocationCoordinate2D noLocation;
+                         MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(noLocation, 50000, 50000);
+                         MKCoordinateRegion region = [self.mapView regionThatFits:viewRegion];
+                         region.center = placemark.region.center;
+                         region.span.longitudeDelta /= 8.0;
+                         region.span.latitudeDelta /= 8.0;
+                         
+                         [self.mapView setRegion:region animated:YES];
+                         [self.mapView addAnnotation:placemark];
+                     }
+                 }
+     ];
+    
+    
+    
+    
 }
 
 - (NSDictionary *)heatMapData

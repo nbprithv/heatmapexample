@@ -32,9 +32,6 @@
 
 - (void)viewDidLoad
 {
-    
-    
-    
     indicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     indicator.frame = CGRectMake(0.0, 0.0, 40.0, 40.0);
     indicator.center = self.view.center;
@@ -42,12 +39,10 @@
     [indicator bringSubviewToFront:self.view];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = TRUE;
     
-    
-    
     [indicator startAnimating];
-    
+
     [super viewDidLoad];
-    
+
     [self getCurrentLoc];
     
 }
@@ -63,6 +58,11 @@
     locationManager.delegate = self;
     locationManager.distanceFilter = kCLDistanceFilterNone;
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    if ([CLLocationManager locationServicesEnabled]) {
+        NSLog(@"Location not allowedqqqqq");
+    }
+    [locationManager requestWhenInUseAuthorization];
+    [locationManager requestAlwaysAuthorization];
     [locationManager startUpdatingLocation];
 }
 
@@ -73,17 +73,18 @@
 }
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locs {
+            NSLog(@"trying to get placesaaaaa");
     crnLoc = [locs lastObject];
-    
     [self getPlaces:crnLoc];
     [locationManager stopUpdatingLocation];
     [self getCurrAddress:crnLoc];
 }
 
 - (void) getPlaces:(CLLocation*)currentLoc {
-    
-    //    getPlacesAPI = [NSString stringWithFormat:@"http://aqueous-caverns-8294.herokuapp.com/place?action=get_places&currlat=%.8f&currlong=%.8f",currentLoc.coordinate.latitude,currentLoc.coordinate.longitude];
-    getPlacesAPI = @"http://aqueous-caverns-8294.herokuapp.com/place?action=get_places&currlat=37.78735890&currlong=-122.40822700";
+    NSLog(@"trying to get places");
+        getPlacesAPI = [NSString stringWithFormat:@"http://ec2-54-68-50-228.us-west-2.compute.amazonaws.com:3000/place?action=get_places&currlat=%.8f&currlong=%.8f",currentLoc.coordinate.latitude,currentLoc.coordinate.longitude];
+    NSLog(@"trying to get places");
+    //getPlacesAPI = @"http://aqueous-caverns-8294.herokuapp.com/place?action=get_places&currlat=37.78735890&currlong=-122.40822700";
     NSURL *urlObj = [NSURL URLWithString:getPlacesAPI];
     
     [self getCurrentLoc];
@@ -185,6 +186,7 @@
     
     // Set a movement threshold for new events.
     locationManager.distanceFilter = 50; // meters
+
     
     [locationManager startUpdatingLocation];
 }

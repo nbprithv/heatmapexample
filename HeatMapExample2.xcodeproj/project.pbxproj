@@ -246,6 +246,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Niranjan Prithviraj";
 				TargetAttributes = {
+					966A45C919A4180D00390939 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					966A45EA19A4180D00390939 = {
 						TestTargetID = 966A45C919A4180D00390939;
 					};
@@ -433,6 +440,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HeatMapExample2/HeatMapExample2-Prefix.pch";
 				INFOPLIST_FILE = "HeatMapExample2/HeatMapExample2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -446,6 +454,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HeatMapExample2/HeatMapExample2-Prefix.pch";
 				INFOPLIST_FILE = "HeatMapExample2/HeatMapExample2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -510,6 +519,7 @@
 				966A45FE19A4180D00390939 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		966A45FF19A4180D00390939 /* Build configuration list for PBXNativeTarget "HeatMapExample2Tests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +528,7 @@
 				966A460119A4180D00390939 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
